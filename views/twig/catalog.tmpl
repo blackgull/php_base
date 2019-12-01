@@ -1,0 +1,10 @@
+{% for product in products %}
+   <div class="row-product">
+       <p class="row-product_flex"><a href="/?c=product&a=card&id={{ product.idx }}">{{ product.name }}</a></p>
+       <p class="row-product_flex">{{ product.description }}</p>
+       <p class="row-product_flex row-product_center">{{ product.price }}</p>
+       <img src="/img/{{ product.image }}" alt="" class="row-product_image">
+   </div>
+{% endfor %}
+
+
